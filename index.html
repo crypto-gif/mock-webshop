@@ -22,6 +22,22 @@
     btn {
     cursor: pointer;
     }
+    @media (min-width: 650px) {
+    #slideshow {
+      max-height: 30vh;
+      max-width: 30vh;
+      justify-self: center;
+      justify-content: center; /* Center items horizontally */
+      align-items: center; /* Center items vertically */
+      overflow: hidden;
+    }
+      #carouselslides {
+        justify-self: center;
+            max-width: 100%;
+            max-height: 100%;
+            object-fit: contain; /* Ensure the item scales proportionally */
+      }
+    }
   </style>
   </head>
 
@@ -87,9 +103,9 @@
     </div>
   </div>
 
-  <div id="slideshow">
-    <div class="container" style="width: 500px;">
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+  <div id="slideshow" style="max-height:20% max-width:100%;">
+    <div class="container">
+      <div id="carouselslides" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./assets/thumbnail/thumbnail_image0.jpg" class="d-block w-100" alt="schematic of dob ravidson brand sweater">
@@ -105,7 +121,7 @@
     </div>
   </div>
 
-  <div id="value">
+  <div id="offer">
   <div class="container px-4 py-5" id="hanging-icons">
     <h2 class="pb-2 border-bottom">Our Offer</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
