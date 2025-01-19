@@ -7,12 +7,27 @@
   <title>Bootstrap Components</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
-  <style>
-
+    <!-- Custom CSS -->
+    <style>
+    body {
+      cursor: crosshair;
+    }
+    .gradient-background {
+        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        /* Add other styles if needed */
+        padding: 50px;
+        color: black;
+        text-align: center;
+    }
+    btn {
+    cursor: pointer;
+    }
   </style>
-</head>
+  </head>
 
 <body>
+
+  <div id="navbar">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
@@ -52,26 +67,47 @@
       </div>
     </div>
   </nav>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</div>
 
-  <div class="px-4 pt-5 my-5 text-center border-bottom">
-    <h1 class="display-4 fw-bold text-body-emphasis">A Cave in The WOOT</h1>
-    <div class="col-lg-6 mx-auto">
-      <p class="lead mb-4">We provide the hideout. Where a man is allowed to be what he can be: Nothing less than a man.</p>
-      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-        <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3">Browse our products</button>
-        <button type="button" class="btn btn-outline-secondary btn-lg px-4">Interact with our community</button>
+  <div id="a-cave-in-the-woot" class="gradient-background">
+    <div class="px-4 pt-5 my-5 text-center border-bottom">
+      <h1 class="display-4 fw-bold text-body-emphasis">A Cave in The WOOT</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-4">We provide the hideout. Where a man is allowed to be what he can be: Nothing less than a man.</p>
+        <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+          <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3">Browse our products</button>
+          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Interact with our community</button>
+        </div>
       </div>
-    </div>
-    <div class="overflow-hidden" style="max-height: 30vh;">
-      <div class="container px-5">
-        <img src="./Sigmawolf723.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+      <div class="overflow-hidden" style="max-height: 50vh;">
+        <div class="container px-5">
+          <img src="./assets/fullsize/Sigmawolf723.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+        </div>
       </div>
     </div>
   </div>
 
+  <div id="slideshow">
+    <div class="container" style="width: 500px;">
+      <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./assets/thumbnail/thumbnail_image0.jpg" class="d-block w-100" alt="schematic of dob ravidson brand sweater">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/thumbnail/thumbnail_image1.jpg" class="d-block w-100" alt="schematic of biceps">
+          </div>
+          <div class="carousel-item">
+            <img src="./assets/thumbnail/thumbnail_image2.jpg" class="d-block w-100" alt="schematic of lake in mountains">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="value">
   <div class="container px-4 py-5" id="hanging-icons">
-    <h2 class="pb-2 border-bottom">Our Challenge</h2>
+    <h2 class="pb-2 border-bottom">Our Offer</h2>
     <div class="row g-4 py-5 row-cols-1 row-cols-lg-3">
       <div class="col d-flex align-items-start">
         <div class="icon-square text-body-emphasis bg-body-secondary d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
@@ -111,6 +147,16 @@
       </div>
     </div>
   </div>
+</div>
+
+<footer class="footer mt-auto py-3 bg-light">
+  <div class="container">
+    <span class="text-muted">Copyright &copy; 2025 WOOT. All rights reserved.</span>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
 </body>
 
 </html>
