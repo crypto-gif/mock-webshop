@@ -13,7 +13,8 @@
       cursor: crosshair;
     }
     .gradient-background {
-        background: linear-gradient(to right, #ff7e5f, #feb47b);
+        /*background: linear-gradient(to right, #ff7e5f, #feb47b);*/
+        background: linear-gradient(to right, #B1232D, #feb47b);
         /* Add other styles if needed */
         padding: 50px;
         color: black;
@@ -24,19 +25,19 @@
     }
     @media (min-width: 650px) {
     #slideshow {
-      max-height: 30vh;
-      max-width: 30vh;
+      max-height: 50vh;
+      max-width: 50vw;
       justify-self: center;
       justify-content: center; /* Center items horizontally */
       align-items: center; /* Center items vertically */
       overflow: hidden;
     }
-      #carouselslides {
-        justify-self: center;
-            max-width: 100%;
-            max-height: 100%;
-            object-fit: contain; /* Ensure the item scales proportionally */
-      }
+    #carouselslides {
+      justify-self: center;
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* Ensure the item scales proportionally */
+    }
     }
   </style>
   </head>
@@ -46,7 +47,7 @@
   <div id="navbar">
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
+      <a class="navbar-brand" href="./index.html"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="30" fill="currentColor" class="bi bi-box-arrow-up-right" viewBox="0 0 16 16">
         <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5"/>
         <path fill-rule="evenodd" d="M16 .5a.5.5 0 0 0-.5-.5h-5a.5.5 0 0 0 0 1h3.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V5.5a.5.5 0 0 0 1 0z"/>
       </svg> WOOT</a>
@@ -56,23 +57,23 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
+            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About</a>
+            <a class="nav-link" href="./about.html">About</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle" href="./products.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Products
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Toys for Boys</a></li>
-              <li><a class="dropdown-item" href="#">Men's health</a></li>
-              <li><a class="dropdown-item" href="#">Dob Ravidson Prime Menswear</a></li>
+              <li><a class="dropdown-item" href="./toys-for-boys.html">Toys for Boys</a></li>
+              <li><a class="dropdown-item" href="./mens-health.html">Men's health</a></li>
+              <li><a class="dropdown-item" href="./dob-ravidson.html">Dob Ravidson Prime Manswear</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Pump it. Sportscave</a></li>
+              <li><a class="dropdown-item" href="./pump-it-sportscave.html">Pump it. Sportscave</a></li>
               <li><hr class="dropdown-divider"></li>
-              <li><a class="dropdown-item" href="#">Trips to Loch Manliness</a></li>
+              <li><a class="dropdown-item" href="./travel-agency.html">Trips to Loch Manliness</a></li>
             </ul>
           </li>
         </ul>
@@ -87,12 +88,16 @@
 
   <div id="a-cave-in-the-woot" class="gradient-background">
     <div class="px-4 pt-5 my-5 text-center border-bottom">
-      <h1 class="display-4 fw-bold text-body-emphasis">A Cave in The WOOT</h1>
+      <h1 class="display-4 fw-bold text-body-emphasis">A Hut in The WOOT</h1>
       <div class="col-lg-6 mx-auto">
-        <p class="lead mb-4">We provide the hideout. Where a man is allowed to be what he was born to be: toxic and masculine.</p>
+        <p class="lead mb-4">We provide the hideout. Where a man is allowed to be what he can be: Nothing less than a man.</p>
         <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-          <button type="button" class="btn btn-dark btn-lg px-4 me-sm-3">Browse our products</button>
-          <button type="button" class="btn btn-outline-secondary btn-lg px-4">Interact with our community</button>
+          <a href="./products.html" class="btn btn-dark">
+            Browse our products
+          </a>
+          <a href="./social-media.html" class="btn btn-bg-transparent btn-outline-dark">
+            Interact with our community
+          </a>
         </div>
       </div>
       <div class="overflow-hidden" style="max-height: 50vh;">
@@ -103,7 +108,7 @@
     </div>
   </div>
 
-  <div id="slideshow" style="max-height:20% max-width:100%;">
+  <div id="slideshow">
     <div class="container">
       <div id="carouselslides" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
@@ -132,7 +137,7 @@
         <div>
           <h3 class="fs-2 text-body-emphasis">Improve yourself</h3>
           <p>We all look up to the great men in history. How can one become great? Growth through perseverance, nutrition and reps. We have what you need.</p>
-          <a href="#" class="btn btn-dark">
+          <a href="./pump-it-sportscave.html" class="btn btn-dark">
             Pump it. Sportscave
           </a>
         </div>
@@ -144,7 +149,7 @@
         <div>
           <h3 class="fs-2 text-body-emphasis">Lead the pack</h3>
           <p>To gaze into the abyss is to know yourself. No office chair or hot showers made a hero. Join us on the trip of a lifetime and assess if you're worthy to lead.</p>
-          <a href="#" class="btn btn-dark">
+          <a href="./travel-agency.html" class="btn btn-dark">
             Book a trip
           </a>
         </div>
@@ -156,7 +161,7 @@
         <div>
           <h3 class="fs-2 text-body-emphasis">Dare to Fight</h3>
           <p>Kleider machen Leute, as the germans say. We don't. We know that you are Alpha, and it's not because of any garment. Nevertheless, underline your status with our:</p>
-          <a href="#" class="btn btn-dark">
+          <a href="./dob-ravidson.html" class="btn btn-dark">
             Prime Manswear
           </a>
         </div>
